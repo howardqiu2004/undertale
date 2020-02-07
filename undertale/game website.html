@@ -4,6 +4,9 @@
 
 <head>
 	<title>Undertale</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+	
 	<style>
 	
 	a:link {
@@ -23,32 +26,15 @@
 	}
 	
 	body {
-		background-image: url('undertale heart.png');
-		background-repeat: no-repeat;
-		background-size: cover;
+		background-image: url('undertale heart.png'), url('background.png');
+		background-repeat: no-repeat, repeat;
+		background-size: 30%, 5%;
 		background-attachment: fixed;
 		background-position: center;
+		background-color: black;
 		color: white;
-		font-size: 18pt;
-		font-family: courier new;
-	}
-	
-	div {
-		background-image: url('background.png');
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 800px;
-		margin-bottom: 800px;
-		padding: 30px;
-		width: 900px;
-		border: 10px solid red;
-		border-radius: 35px;
-		background-color: rgba(0,0,0,0.5)
-	}
-	
-	img {
-		float: left;
-		margin-right: 30px;
+		font-size: 22pt;
+		font-family: 'VT323', monospace;
 	}
 	
 	h1 {
@@ -61,17 +47,54 @@
 		text-align: center;
 	}
 	
+	img.sans {
+		float: left;
+		margin-right: 30px;
+		margin-top: -25px;
+	}
+	
+	img.sans0 {
+		float: right;
+		margin-left: 30px;
+	}
+	
+	
+	.top {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1000px;
+		margin-bottom: 50px;
+		padding: 30px;
+		width: 900px;
+		border: 10px solid rgba(255,0,0,0.9);
+		border-radius: 35px;
+		background-color: rgba(0,0,0,0.5);
+	}
+	
+	.bottom {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1000px;
+		padding: 30px;
+		width: 900px;
+		border: 10px solid rgba(255,0,0,0.9);
+		border-radius: 35px;
+		background-color: rgba(0,0,0,0.5);
+	}
+	
+	
 	</style>
 	
 </head>
 
 <body>
 
-<div>
+<div class="top">
 
-	<h1>Undertale</h1>
+	<h1>UNDERTALE</h1>
 
-	<img src="Sans.png" width="200px">
+
+	<img class="sans" src="Sans.png" width="200px">
 	
 	<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque blandit cursus. Phasellus condimentum maximus volutpat. In dui odio, rutrum a ante non, tempor elementum purus. Sed eleifend varius vehicula. Aliquam a sodales lacus, sed euismod orci.
 	</p>
@@ -84,6 +107,12 @@
 	
 	<p>Nam ut dictum erat, vitae feugiat lectus. Donec aliquet imperdiet tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum sollicitudin massa at quam auctor, ut egestas lectus convallis.</p>
 
+	</div class="top">
+	
+	<div class="bottom">
+
+	<img class="sans0" src="Sans0.png" width="200px">
+	
 	<h3>Subheading 3!</h3>
 	
 	<ul>
@@ -93,8 +122,10 @@
 	<li><a href="https://en.wikipedia.org/wiki/Undertale">Aliquam a sodales</a></li>
 	</ul>
 	
-	</div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Zzo6L3wsf8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
+	</div class="bottom">
+
 	</body>
 	
 	</html>
